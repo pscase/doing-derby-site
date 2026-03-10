@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <!-- Dogwood flower: gold version for dark backgrounds -->
+  <g fill="none" stroke="rgba(201,169,110,0.4)" stroke-width="0.5">
+    <!-- Top petal -->
+    <path d="M12 2 C10 5, 9 8, 10.5 11 C11 11.5, 13 11.5, 13.5 11 C15 8, 14 5, 12 2Z" fill="#dcc99a" opacity="0.85"/>
+    <!-- Right petal -->
+    <path d="M22 12 C19 10, 16 9, 13 10.5 C12.5 11, 12.5 13, 13 13.5 C16 15, 19 14, 22 12Z" fill="#dcc99a" opacity="0.85"/>
+    <!-- Bottom petal -->
+    <path d="M12 22 C14 19, 15 16, 13.5 13 C13 12.5, 11 12.5, 10.5 13 C9 16, 10 19, 12 22Z" fill="#dcc99a" opacity="0.85"/>
+    <!-- Left petal -->
+    <path d="M2 12 C5 14, 8 15, 11 13.5 C11.5 13, 11.5 11, 11 10.5 C8 9, 5 10, 2 12Z" fill="#dcc99a" opacity="0.85"/>
+    <!-- Petal tip marks -->
+    <circle cx="12" cy="3" r="0.7" fill="#8B6914" opacity="0.7"/>
+    <circle cx="21" cy="12" r="0.7" fill="#8B6914" opacity="0.7"/>
+    <circle cx="12" cy="21" r="0.7" fill="#8B6914" opacity="0.7"/>
+    <circle cx="3" cy="12" r="0.7" fill="#8B6914" opacity="0.7"/>
+    <!-- Center -->
+    <circle cx="12" cy="12" r="2" fill="#c9a96e" opacity="0.9"/>
+    <circle cx="11.5" cy="11.5" r="0.5" fill="#8B6914"/>
+    <circle cx="12.5" cy="11.5" r="0.5" fill="#8B6914"/>
+    <circle cx="12" cy="12.5" r="0.5" fill="#8B6914"/>
+  </g>
+</svg>

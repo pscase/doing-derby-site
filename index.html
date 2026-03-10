@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doing Derby — Your Insider's Guide to the Kentucky Derby, Bourbon, Horse Country &amp; the Commonwealth</title>
+  <meta name="description" content="Doing Derby is your authority on the Kentucky Derby, Louisville, horse country, fine bourbon, Keeneland racing, and exploring the best of the Commonwealth of Kentucky.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/doing-derby-logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  An Insider's Guide to the Kentucky Derby &mdash; Now Available
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container">
+    <button class="nav-toggle" aria-label="Open menu" onclick="document.querySelector('.main-nav').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="guide.html">The Guide</a>
+      <a href="keeneland.html">Keeneland</a>
+      <a href="churchill-food.html">Derby Eats</a>
+      <a href="#bourbon">Bourbon</a>
+      <a href="#topics">Horse Country</a>
+      <a href="#subscribe">Newsletter</a>
+      <a href="#shop" class="nav-shop-btn">Shop</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero Banner -->
+<section class="hero">
+  <div class="hero-banner">
+    <div class="hero-banner-inner">
+      <div class="hero-banner-rule"></div>
+      <div class="hero-banner-content">
+        <div class="hero-banner-left">
+          <span class="hero-banner-est">Est.</span>
+        </div>
+        <div class="hero-banner-center">
+          <div class="dd-monogram" aria-label="DD monogram">
+            <svg viewBox="0 0 100 85" class="dd-monogram-svg" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="ddGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#dcc99a"/>
+                  <stop offset="50%" style="stop-color:#c9a96e"/>
+                  <stop offset="100%" style="stop-color:#dcc99a"/>
+                </linearGradient>
+              </defs>
+              <!-- Large D (back, layered behind) -->
+              <text x="34" y="60" font-family="'Playfair Display', Georgia, serif" font-size="68" font-weight="700" fill="url(#ddGold)" opacity="0.7">D</text>
+              <!-- Small D (front, offset upper-left) -->
+              <text x="10" y="48" font-family="'Playfair Display', Georgia, serif" font-size="52" font-weight="700" fill="url(#ddGold)">D</text>
+              <!-- Stirrup strap -->
+              <line x1="17" y1="50" x2="17" y2="60" stroke="url(#ddGold)" stroke-width="1.5" stroke-linecap="round"/>
+              <!-- Stirrup iron -->
+              <path d="M13,60 L21,60 L22.5,68 L11.5,68 Z" fill="none" stroke="url(#ddGold)" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h1 class="hero-banner-name">Doing Derby</h1>
+        </div>
+        <div class="hero-banner-right">
+          <span class="hero-banner-year">1971</span>
+        </div>
+      </div>
+      <div class="hero-banner-rule"></div>
+      <div class="hero-banner-subtitle">Louisville &bull; Horse Country &bull; Fine Kentucky Bourbon</div>
+      <div class="hero-banner-rule hero-banner-rule--thin"></div>
+    </div>
+  </div>
+  <div class="hero-centered">
+    <ul class="hero-bullets">
+      <li>An Insider&rsquo;s Guide to the Kentucky Derby</li>
+      <li>Bluegrass Horse Country &amp; Farm Tours</li>
+      <li>Fine Kentucky Bourbon &amp; the Bourbon Trail</li>
+      <li>Derby Fashion, Hats &amp; Southern Style</li>
+      <li>Louisville Dining &amp; Entertaining</li>
+      <li>Exploring the Best of the Commonwealth</li>
+    </ul>
+    <div class="hero-buttons">
+      <a href="guide.html" class="btn btn-gold">Preview the Guide</a>
+      <a href="#shop" class="btn btn-outline">Shop Doing Derby</a>
+    </div>
+  </div>
+</section>
+
+<!-- Guide Preview -->
+<section class="section section--cream" id="guide">
+  <div class="container">
+    <div class="guide-preview">
+      <div class="guide-mockup">
+        <img src="images/doing-derby-logo-light.png" alt="Doing Derby 1971" class="guide-mockup-logo">
+        <div class="guide-subtitle">An Insider's Guide to the Kentucky Derby</div>
+        <p>Louisville &bull; Horse Country<br>A Sip of Fine Kentucky Bourbon</p>
+      </div>
+      <div class="guide-content">
+        <span class="section-label">The Guidebook</span>
+        <h2>An Insider's Guide to the Kentucky Derby</h2>
+        <p>
+          Louisville &bull; Horse Country &bull; A Sip of Fine Kentucky Bourbon. Whether it&rsquo;s your first Derby
+          or your tenth, the Doing Derby Guide helps you experience Kentucky the way insiders do.
+        </p>
+        <ul class="toc-preview">
+          <li><span class="toc-num">01</span> Welcome to the World of the Kentucky Derby</li>
+          <li><span class="toc-num">02</span> The Rhythm of Derby Season</li>
+          <li><span class="toc-num">03</span> Keeneland: The Heart of Bluegrass Racing</li>
+          <li><span class="toc-num">04</span> The Kentucky Derby Festival</li>
+          <li><span class="toc-num">05</span> Planning Your Derby Weekend</li>
+          <li><span class="toc-num">06</span> What to Wear to the Derby</li>
+          <li><span class="toc-num">07</span> Exploring Horse Country &amp; A Sip of Kentucky Bourbon</li>
+          <li><span class="toc-num">08</span> Doing Derby Like a Local &mdash; <em>plus 6 more chapters</em></li>
+        </ul>
+        <a href="guide.html" class="btn btn-hunter">Read a Free Preview</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What We Cover / Topics -->
+<section class="section" id="topics">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">What We Cover</span>
+      <h2>Your Guide to Derby Country &amp; the Commonwealth</h2>
+      <p>From the thunder of hooves at Churchill Downs to a quiet bourbon tasting in the rolling hills of Woodford County &mdash; Doing Derby covers every corner of the Kentucky experience.</p>
+    </div>
+    <div class="topics-grid">
+      <div class="topic-card">
+        <span class="topic-icon" aria-hidden="true">&#127943;</span>
+        <h3>The Kentucky Derby</h3>
+        <p>History, traditions, seating guides, race-day tips, and everything you need to experience the most exciting two minutes in sports.</p>
+      </div>
+      <div class="topic-card">
+        <span class="topic-icon" aria-hidden="true">&#127863;</span>
+        <h3>Kentucky Bourbon</h3>
+        <p>Distillery tours, tasting notes, the Bourbon Trail, and the stories behind Kentucky's most storied spirit.</p>
+      </div>
+      <div class="topic-card">
+        <span class="topic-icon" aria-hidden="true">&#128052;</span>
+        <h3>Horse Country</h3>
+        <p>Bluegrass farm tours, thoroughbred culture, Lexington's charm, and the landscapes that define Kentucky's soul.</p>
+      </div>
+      <div class="topic-card">
+        <span class="topic-icon" aria-hidden="true">&#127800;</span>
+        <h3>Derby Fashion</h3>
+        <p>Hat etiquette, outfit inspiration, and style guides for every venue &mdash; from the infield to the clubhouse.</p>
+      </div>
+      <div class="topic-card">
+        <span class="topic-icon" aria-hidden="true">&#127860;</span>
+        <h3>Louisville &amp; Dining</h3>
+        <p>The best restaurants, speakeasies, Hot Browns, and culinary traditions that make Louisville a food city.</p>
+      </div>
+      <div class="topic-card">
+        <span class="topic-icon" aria-hidden="true">&#127793;</span>
+        <h3>Keeneland &amp; Lexington</h3>
+        <p>The Keeneland spring meet, Lexington's vibrant culture, and the most organic, authentically Kentuckian racing experience in the Commonwealth.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pull Quote -->
+<section class="section section--cream">
+  <div class="container">
+    <div class="pull-quote">
+      <blockquote>&ldquo;The race may last only two minutes&mdash;but the magic of Derby week lasts much longer.&rdquo;</blockquote>
+      <cite>&mdash; An Insider&rsquo;s Guide to the Kentucky Derby</cite>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Product: Cinnamon Rolls -->
+<section class="section" id="shop">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">The Doing Derby Shop</span>
+      <h2>Equestrian Style &amp; Southern Entertaining</h2>
+      <p>Curated goods for the Kentucky lifestyle &mdash; from Derby Day barware and equestrian home d&eacute;cor to race-day fashion and bourbon country gifts. Every piece chosen to bring the spirit of horse country home.</p>
+    </div>
+
+    <!-- Shop Categories Grid -->
+    <div class="shop-grid">
+      <div class="shop-card">
+        <span class="shop-card-icon" aria-hidden="true">&#127864;</span>
+        <h3>Barware &amp; Entertaining</h3>
+        <ul class="shop-card-list">
+          <li>Sterling &amp; copper Mint Julep cup sets</li>
+          <li>Bourbon tasting flight boards</li>
+          <li>Equestrian cocktail shaker sets</li>
+          <li>Horse-bit handle serving trays</li>
+          <li>Derby Day linen cocktail napkins</li>
+          <li>Personalized bourbon glasses</li>
+        </ul>
+        <a href="#" class="btn btn-hunter btn-sm">Browse Collection</a>
+      </div>
+      <div class="shop-card">
+        <span class="shop-card-icon" aria-hidden="true">&#128330;</span>
+        <h3>Equestrian Home D&eacute;cor</h3>
+        <ul class="shop-card-list">
+          <li>Snaffle-bit throw pillows in velvet &amp; linen</li>
+          <li>Vintage thoroughbred racing prints</li>
+          <li>Bluegrass &amp; Bourbon soy candles</li>
+          <li>Brass horse head bookends</li>
+          <li>Saddlery-inspired leather trays</li>
+          <li>Kentucky landmarks watercolor art</li>
+        </ul>
+        <a href="#" class="btn btn-hunter btn-sm">Browse Collection</a>
+      </div>
+      <div class="shop-card">
+        <span class="shop-card-icon" aria-hidden="true">&#127913;</span>
+        <h3>Derby Day Fashion</h3>
+        <ul class="shop-card-list">
+          <li>Wide-brim Derby hats &amp; fascinators</li>
+          <li>Silk equestrian-print scarves</li>
+          <li>Horse-bit jewelry &mdash; bracelets &amp; necklaces</li>
+          <li>Jockey silk enamel earrings</li>
+          <li>Derby Day clutch bags</li>
+          <li>Horseshoe cufflinks &amp; tie bars</li>
+        </ul>
+        <a href="#" class="btn btn-hunter btn-sm">Browse Collection</a>
+      </div>
+      <div class="shop-card">
+        <span class="shop-card-icon" aria-hidden="true">&#128085;</span>
+        <h3>Horse Country Clothing</h3>
+        <ul class="shop-card-list">
+          <li>Riding-inspired women&rsquo;s blazers</li>
+          <li>Premium embroidered polo shirts</li>
+          <li>Equestrian-print shirt dresses</li>
+          <li>Classic quilted vests</li>
+          <li>Men&rsquo;s seersucker blazers</li>
+          <li>Waxed cotton field jackets</li>
+        </ul>
+        <a href="#" class="btn btn-hunter btn-sm">Browse Collection</a>
+      </div>
+      <div class="shop-card">
+        <span class="shop-card-icon" aria-hidden="true">&#127873;</span>
+        <h3>Kentucky Gifts &amp; Bourbon</h3>
+        <ul class="shop-card-list">
+          <li>Bourbon barrel stave accessories</li>
+          <li>Curated Derby Day gift boxes</li>
+          <li>Bourbon-infused food &mdash; pralines &amp; truffles</li>
+          <li>Leather-bound monogrammed flasks</li>
+          <li>Mint Julep &amp; Old Fashioned cocktail kits</li>
+          <li>Kentucky-shaped hardwood cutting boards</li>
+        </ul>
+        <a href="#" class="btn btn-hunter btn-sm">Browse Collection</a>
+      </div>
+      <div class="shop-card shop-card--featured">
+        <span class="shop-card-icon" aria-hidden="true">&#127856;</span>
+        <h3>From the Doing Derby Kitchen</h3>
+        <ul class="shop-card-list">
+          <li>Bourbon Butterscotch Cinnamon Rolls</li>
+          <li>Handcrafted in small batches</li>
+          <li>Made with real Kentucky bourbon</li>
+          <li>Rich butterscotch &amp; warm cinnamon</li>
+          <li>Perfect for Derby brunch &amp; gifting</li>
+          <li>Ships fresh to your door</li>
+        </ul>
+        <a href="#" class="btn btn-burgundy btn-sm" id="shopify-link">Order Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Shopify Integration Note -->
+<section class="section section--cream" id="shopify-info">
+  <div class="container">
+    <div class="shopify-banner">
+      <div class="shopify-banner-content">
+        <span class="section-label">Powered by Shopify</span>
+        <h2>The Doing Derby Storefront</h2>
+        <p>
+          Our curated collections are available through our Shopify-powered storefront, featuring equestrian-themed
+          goods from premium suppliers across the United States. Every item is hand-selected to reflect the elegance
+          of horse country and the warmth of southern hospitality.
+        </p>
+        <ul class="shopify-features">
+          <li>Free shipping on orders over $75</li>
+          <li>Curated collections updated seasonally</li>
+          <li>Gift wrapping available on all orders</li>
+        </ul>
+        <a href="#" class="btn btn-hunter">Visit the Full Shop</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bourbon & Lifestyle -->
+<section class="section section--hunter" id="bourbon">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label" style="color:var(--gold);">Bourbon &amp; Beyond</span>
+      <h2>The Spirit of Kentucky</h2>
+      <p>Kentucky bourbon is more than a drink &mdash; it's a tradition, a craft, and a way of life. Doing Derby takes you inside the world of bourbon with the reverence it deserves.</p>
+    </div>
+    <div class="lifestyle-grid">
+      <div class="lifestyle-card">
+        <h3>The Bourbon Trail</h3>
+        <p>From Maker's Mark in Loretto to Woodford Reserve in Versailles, we guide you through Kentucky's legendary distilleries with insider recommendations for tours, tastings, and hidden gems along the way.</p>
+      </div>
+      <div class="lifestyle-card">
+        <h3>Bourbon &amp; Food Pairings</h3>
+        <p>Discover how to pair Kentucky's finest bourbons with southern cuisine &mdash; from smoked meats and aged cheeses to our very own Bourbon Butterscotch Cinnamon Rolls.</p>
+      </div>
+      <div class="lifestyle-card">
+        <h3>Derby Cocktails</h3>
+        <p>The Mint Julep is just the beginning. Explore classic and contemporary bourbon cocktails perfect for Derby Day entertaining, from the Old Fashioned to the Bourbon Smash.</p>
+      </div>
+      <div class="lifestyle-card">
+        <h3>Southern Entertaining</h3>
+        <p>Host your own Derby Day celebration with our guides to tablescaping, menu planning, and the art of southern hospitality that would make any hostess proud.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="section section--cream" id="subscribe">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Stay in the Know</span>
+      <h2>Join the Doing Derby Circle</h2>
+      <p>Get insider Derby tips, bourbon recommendations, new recipes, and first access to the Doing Derby Guide &mdash; plus dispatches from across the Commonwealth, delivered straight to your inbox.</p>
+    </div>
+    <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true">
+      <input type="email" name="email" placeholder="Your email address" required aria-label="Email address">
+      <button type="submit" class="btn btn-hunter">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-text">Doing Derby</span>
+        <p>Your insider's guide to the Kentucky Derby, Bluegrass horse country, fine bourbon, and the best of the Commonwealth.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="guide.html">The Guide</a>
+        <a href="keeneland.html">Keeneland</a>
+        <a href="churchill-food.html">Derby Eats</a>
+        <a href="#bourbon">Bourbon</a>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <a href="#shop">Barware &amp; Entertaining</a>
+        <a href="#shop">Derby Fashion</a>
+        <a href="#shop">Home D&eacute;cor</a>
+        <a href="#shop">Gifts &amp; Bourbon</a>
+        <a href="#shop">Cinnamon Rolls</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
+        <a href="#">Facebook</a>
+        <a href="mailto:hello@doingderby.com">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Doing Derby &bull; DoingDerby.com &bull; All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
