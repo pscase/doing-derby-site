@@ -163,19 +163,17 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ─── Hero ─── */
 .hero {
-  background: linear-gradient(160deg, var(--hunter) 0%, #1e4d36 50%, var(--emerald) 100%);
+  background: 
+    linear-gradient(rgba(120,160,120,.35), rgba(120,160,120,.40)),
+    url("HeroHorsePhoto.png") center center / cover no-repeat;
   color: #fff;
   text-align: center;
-  padding: 60px 0;
+  padding: 180px 0 140px;;
   position: relative;
   overflow: hidden;
 }
 .hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
-  pointer-events: none;
+ display: none;
 }
 .hero h1 {
   font-family: 'Playfair Display', serif;
@@ -253,19 +251,22 @@ h1, h2, h3, h4, h5, h6 {
   gap: 0;
 }
 .dd-monogram-svg {
-  width: 120px;
+  width: 110px;
   height: 102px;
   display: block;
   margin: 0 auto;
   filter: drop-shadow(0 2px 8px rgba(0,0,0,.25));
 }
 .hero-banner-name {
-  font-family: 'Playfair Display', serif;
-  font-size: 3.5rem;
+  font-family: 'Alex Brush', cursive;
+  font-size: 4.6rem;
   font-weight: 400;
   font-style: italic;
   color: #fff;
-  letter-spacing: 1.5px;
+  letter-spacing: .5x;
+  text-shadow:
+     0 2px 12px rgba(0,0,0,.55)
+     0 0 30px rgba(201,169,110,.25);
   text-transform: none;
   margin: 0;
   line-height: 1;
@@ -287,6 +288,23 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--gold-light);
   padding: 10px 0;
 }
+/* Hero logo styling */
+.hero-banner-center {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:8px;
+}
+
+.hero-logo-image{
+  width:220px;
+  max-width:100%;
+  height:auto;
+  display:block;
+  margin:0 auto 10px;
+  filter:drop-shadow(0 4px 10px rgba(0,0,0,.18));
+}
+
 
 /* Hero centered layout */
 .hero-centered {
@@ -298,7 +316,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: center;
 }
-.hero-centered .hero-bullets {
+.hero-centered .hero-bullets { 
   list-style: none;
   margin: 28px 0 36px;
   padding: 0;
@@ -309,7 +327,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-centered .hero-bullets li {
   font-family: 'Lora', serif;
   font-size: .88rem;
-  color: var(--gold);
+  color: rgba (255,255,255,.92);
   padding: 7px 0;
   padding-left: 26px;
   position: relative;
@@ -1010,4 +1028,99 @@ h1, h2, h3, h4, h5, h6 {
   .hero-buttons { justify-content: center; }
   .section { padding: 50px 0; }
   .newsletter-form { flex-direction: column; }
+}
+/* =========================================
+   Doing Derby updates for revised homepage
+   Paste at the very bottom of styles.css
+   ========================================= */
+
+/* Topic card editorial links */
+.text-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-family: 'Lora', serif;
+  font-size: .82rem;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--hunter);
+  font-weight: 600;
+  position: relative;
+  transition: color .25s ease;
+}
+
+.text-link::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: var(--gold);
+  margin-top: 6px;
+  transform: scaleX(.55);
+  transform-origin: left center;
+  transition: transform .25s ease;
+}
+
+.text-link:hover {
+  color: var(--emerald);
+}
+
+.text-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* Daily tips section button spacing refinement */
+#daily-tips .hero-buttons {
+  margin-top: 28px;
+}
+
+/* Slightly more breathing room in topic cards with links */
+.topic-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Make topic card paragraphs a little more graceful */
+.topic-card p {
+  margin-bottom: 8px;
+}
+
+/* Footer links for external/social items */
+.footer-col a[target="_blank"] {
+  position: relative;
+}
+
+/* Better spacing on guide preview for revised content */
+.guide-content .btn {
+  margin-top: 8px;
+}
+
+/* Smooth spacing for shop cards */
+.shop-card .btn {
+  margin-top: 10px;
+  align-self: center;
+}
+
+/* Optional polish for section headers on lighter backgrounds */
+.section-header p {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Slightly more elegant mobile spacing for revised nav */
+@media (max-width: 640px) {
+  .main-nav a {
+    font-size: .9rem;
+    letter-spacing: 1.2px;
+  }
+
+  .text-link {
+    font-size: .8rem;
+  }
+
+  #daily-tips .hero-buttons {
+    gap: 12px;
+  }
 }
