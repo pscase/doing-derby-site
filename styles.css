@@ -1011,3 +1011,98 @@ h1, h2, h3, h4, h5, h6 {
   .section { padding: 50px 0; }
   .newsletter-form { flex-direction: column; }
 }
+/* =========================================
+   Doing Derby updates for revised homepage
+   Paste at the very bottom of styles.css
+   ========================================= */
+
+/* Topic card editorial links */
+.text-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-family: 'Lora', serif;
+  font-size: .82rem;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--hunter);
+  font-weight: 600;
+  position: relative;
+  transition: color .25s ease;
+}
+
+.text-link::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: var(--gold);
+  margin-top: 6px;
+  transform: scaleX(.55);
+  transform-origin: left center;
+  transition: transform .25s ease;
+}
+
+.text-link:hover {
+  color: var(--emerald);
+}
+
+.text-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* Daily tips section button spacing refinement */
+#daily-tips .hero-buttons {
+  margin-top: 28px;
+}
+
+/* Slightly more breathing room in topic cards with links */
+.topic-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Make topic card paragraphs a little more graceful */
+.topic-card p {
+  margin-bottom: 8px;
+}
+
+/* Footer links for external/social items */
+.footer-col a[target="_blank"] {
+  position: relative;
+}
+
+/* Better spacing on guide preview for revised content */
+.guide-content .btn {
+  margin-top: 8px;
+}
+
+/* Smooth spacing for shop cards */
+.shop-card .btn {
+  margin-top: 10px;
+  align-self: center;
+}
+
+/* Optional polish for section headers on lighter backgrounds */
+.section-header p {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Slightly more elegant mobile spacing for revised nav */
+@media (max-width: 640px) {
+  .main-nav a {
+    font-size: .9rem;
+    letter-spacing: 1.2px;
+  }
+
+  .text-link {
+    font-size: .8rem;
+  }
+
+  #daily-tips .hero-buttons {
+    gap: 12px;
+  }
+}
