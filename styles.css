@@ -163,7 +163,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ─── Hero ─── */
 .hero {
-  background: linear-gradient(rgba(26,58,42,.55), rgba(26,58,42,.55)),
+  background: 
+    linear-gradient(rgba(26,58,42,.68), rgba(26,58,42,.74)),
     url("images/herohorsephoto.png") center center / cover no-repeat;
   color: #fff;
   text-align: center;
